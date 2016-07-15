@@ -1,5 +1,11 @@
-package: github.com/chrisccoy/dockergrpc
-import: []
+package: .
+import:
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: github.com/golang/protobuf
+  subpackages:
+  - proto
 testImport:
 - package: github.com/docker/engine-api
   version: ^0.3.3
@@ -10,6 +16,3 @@ testImport:
   version: ^1.1.3
   subpackages:
   - assert
-- package: golang.org/x/net
-  subpackages:
-  - context

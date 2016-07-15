@@ -1,11 +1,6 @@
-hash: 6585f63663dd4eee5127325ce0ceadd05e2b88e5a817b6662585e3208b4116bd
-updated: 2016-07-14T09:09:05.626649908-07:00
-imports: []
-testImports:
-- name: github.com/davecgh/go-spew
-  version: 2df174808ee097f90d259e432cc04442cf60be21
-  subpackages:
-  - spew
+hash: b6b3fd9eedc83833097b69e45cbbcd1f2f117bfb974b9b538f1fb285c0a5b523
+updated: 2016-07-15T11:18:45.63146765-07:00
+imports:
 - name: github.com/docker/engine-api
   version: 0df83fcc24fb4a997df5537526306fb55aa5dca8
   subpackages:
@@ -28,29 +23,59 @@ testImports:
   - nat
 - name: github.com/docker/go-units
   version: f2d77a61e3c169b43402a0a1e84f06daf29b8190
+- name: github.com/golang/protobuf
+  version: 874264fbbb43f4d91e999fecb4b40143ed611400
+  subpackages:
+  - proto
 - name: github.com/Microsoft/go-winio
   version: ce2922f643c8fd76b46cadc7f404a06282678b34
 - name: github.com/opencontainers/runc
-  version: ec01ae5f10516ac73eafb41456365a06f0e21065
+  version: 41b12c095b0cde82a8f22718bc15ceede5f60b0f
   subpackages:
   - libcontainer/user
-- name: github.com/pmezard/go-difflib
-  version: d8ed2627bdf02c080bf22230dbb337003b7aba2d
-  subpackages:
-  - difflib
 - name: github.com/Sirupsen/logrus
   version: 32055c351ea8b00b96d70f28db48d9840feaf0ec
-- name: github.com/stretchr/testify
-  version: f390dcf405f7b83c997eac1b06768bb9f44dec18
-  subpackages:
-  - assert
 - name: golang.org/x/net
   version: 7864c9eef811cd4e2387a4d17eaf985e412b5032
   subpackages:
   - context
+  - http2
+  - trace
+  - http2/hpack
+  - lex/httplex
+  - internal/timeseries
   - proxy
 - name: golang.org/x/sys
   version: b518c298ac9dc94b6ac0757394f50d10c5dfa25a
   subpackages:
   - windows
   - unix
+- name: google.golang.org/grpc
+  version: 02fca896ff5f50c6bbbee0860345a49344b37a03
+  subpackages:
+  - codes
+  - credentials
+  - grpclog
+  - internal
+  - metadata
+  - naming
+  - transport
+  - peer
+testImports:
+- name: github.com/davecgh/go-spew
+  version: 2df174808ee097f90d259e432cc04442cf60be21
+  subpackages:
+  - spew
+- name: github.com/docker/engine-api
+  version: 0df83fcc24fb4a997df5537526306fb55aa5dca8
+  subpackages:
+  - client
+  - types
+- name: github.com/pmezard/go-difflib
+  version: d8ed2627bdf02c080bf22230dbb337003b7aba2d
+  subpackages:
+  - difflib
+- name: github.com/stretchr/testify
+  version: f390dcf405f7b83c997eac1b06768bb9f44dec18
+  subpackages:
+  - assert

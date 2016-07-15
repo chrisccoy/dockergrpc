@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+package imagelist;
+
+// The greeting service definition.
+service ImageLister {
+  // Sends a greeting
+  rpc  ListImages (Empty) returns (ImageListReply) {}
+}
+
+message Empty { }
+// The response message containing the greetings
+message ImageListReply {
+  repeated string imageName = 1;
+}
